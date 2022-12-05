@@ -1,0 +1,184 @@
+{
+  "_comment" : "sert à la sidebar",
+  "css" : {
+    "begin" : {
+      "heading" : "Base",
+      "chapter" : [
+        "Utilisation du CSS",
+        "Les selecteurs CSS",
+        "Stylisée du texte",
+        "Gérée les background",
+        "Display"
+      ],
+      "anchor" : "/part-css#tiers"
+    },
+    "middle" : {
+      "heading" : "Intermédiaire",
+      "chapter" : [
+        "flexbox",
+        "grid",
+        "transitions"
+      ],
+      "anchor" : "/part-css#tiers"
+    },
+    "avancer" : {
+      "heading" : "avancer",
+      "chapter" : [
+        "poids de selecteurs",
+        "cssTrigger"
+      ],
+      "anchor" : "/part-css#tiers"
+    }
+  },
+  "php" : {
+    "begin" : {
+      "heading" : "Base",
+      "chapter" : [
+        "installations PHP",
+        "initialisation a PHP",
+        "liaison base de donnée",
+        "Usage dynamique de PHP",
+        "Utilisée un Template",
+        "Les formulaire avec php",
+        "Chargeur de class en PHP",
+        "MVC"
+      ],
+      "anchor" : "/part-php#tiers"
+    },
+    "middle" : {
+      "heading" : "Intermédiaire",
+      "chapter" : [
+        "Programmation Objet (début)",
+        "???",
+        "???",
+        "???"
+      ],
+      "anchor" : "/intermediaire/php-intermediaire#tiers"
+    },
+    "avancer" : {
+      "heading" : "avancer",
+      "chapter" : [
+        "???",
+        "???",
+        "???",
+        "???",
+        "???"
+      ],
+      "anchor" : "/part-php#tiers"
+    }
+  },
+  
+  "sql" : {
+    "begin" : {
+      "heading" : "Base",
+      "chapter" : [
+        "Initialisation à SQL",
+        "Premier pas",
+        "Ajoutée des données",
+        "Changé des données",
+        "Supprimer quelque choses",
+        "Modifiez une table, colonnes",
+        "Regroupée les données",
+        "Foreign key",
+        "jointure"
+      ],
+      "anchor" : "/part-sql#tiers"
+    },
+    "middle" : {
+      "heading" : "Intermédiaire",
+      "chapter" : [
+        "vue",
+        "procédure stockée",
+        "mode GRANT",
+        "Transaction",
+        "Rollback",
+        "???",
+        "???",
+        "???"
+      ],
+      "anchor" : "/part-sql#tiers"
+    },
+    "avancer" : {
+      "heading" : "avancer",
+      "chapter" : [
+        "???",
+        "???",
+        "???",
+        "???",
+        "???"
+      ],
+      "anchor" : "/part-sql#tiers"
+    }
+  },
+
+
+
+
+  "mongo" : {
+    "begin" : {
+      "heading" : "Débutant",
+      "chapter" : [
+        "introduction",
+        "find",
+        "create"
+      ],
+      "anchor" : "/part-mongo#tiers"
+    },
+    "middle" : {
+      "heading" : "Intermédiaire",
+      "chapter" : [
+        "projection",
+        "pagination",
+        "agregation"
+      ],
+      "anchor" : "/part-mongo#tiers"
+    },
+    "avancer" : {
+      "heading" : "mongo realm",
+      "chapter" : [
+        "Schema",
+        "???",
+        "???",
+        "???",
+        "???"
+      ],
+      "anchor" : "/part-mongo#tiers"
+    }
+  },
+  "js" : {
+    "begin" : {
+      "heading" : "Base",
+      "chapter" : [
+        "A quoi sert JavaScript ?",
+        "Les bases",
+        "Manipulation des Strings",
+        "Calculer avec JavaScript",
+        "Manipulation de la date",
+        "Objet et Json"
+      ],
+      "anchor" : "/part-javascript#tiers"
+    },
+    "middle" : {
+      "heading" : "Intermédiaire",
+      "chapter" : [
+        "Programmation événementielle",
+        "Manipulation du document",
+        "Les formulaires",
+        "les Class",
+        "AJAX",
+        "Canvas"
+      ],
+      "anchor" : "/part-javascript#tiers"
+    },
+    "avancer" : {
+      "heading" : "Avancer",
+      "chapter" : [
+        "fonction pure & impur",
+        "prototypage",
+        "fonction génératrice",
+        "Monade"
+      ],
+      "anchor" : "/part-javascript#tiers"
+    }
+  }
+}
