@@ -13,6 +13,7 @@ import { SyntaxePhp,
   FormEmbed6,
   FormEmbed7,
   FormEmbed8,
+  FormEmbed9,
   ChargeurPHP
 } from './../components/embed/EmbedPhp';
 // Material ui
@@ -34,6 +35,10 @@ const useStyles = makeStyles((theme) => ({
       textDecoration: 'underline',
       marginBottom : '1rem',
       color: '#555',
+    },
+    title : {
+      fontFamily : 'Verdana',
+      paddingBottom: '1rem',
     },
     '& .query, .attr, .fn, .var' : {
       fontWeight: '600',
@@ -286,8 +291,8 @@ const PartPhp = data => {
           </Typography>
           <FormEmbed7/>
           <Typography paragraph>
-            Ici on place chacunes des variables qui vont accueillir chacun des champs du formulaire séparéments. <span className="fn">trim()</span>
-            est une fonction qui vide la chaine de caractères de ces espaces au début et en fin de <chaine className="span fn">htmlspecialchars()</chaine>
+            Ici on place chacunes des variables qui vont accueillir chacun des champs du formulaire séparéments. <span className="fn">trim()&nbsp;</span>
+            est une fonction qui vide la chaine de caractères de ces espaces au début et en fin de <span className="span fn">htmlspecialchars()</span>
             &nbsp; est une fonction qui permet de replacer certain caractères spéciaux en <Link href="https://developer.mozilla.org/fr/docs/Glossary/Entity" rel="noreferrer" target="_blank">entitée HTML</Link> car 
             certain caractères spéciaux peuvent être dangereux pour la base de donnée ou le site web en lui même, généralement lorsque l'ont check les champs 
             de saisie ont s'arranges pour ne pas faire passer les données (qui sont la saisie de l'utilisateur) avec des doubles tirets ou des chevrons.
@@ -300,23 +305,40 @@ const PartPhp = data => {
           </Typography>
           <FormEmbed8/>
           <Typography paragraph>
-
+            Dans un controller il nous faut en général vérifier les données envoyez par le client afin de bloquée éventuellement les données 
+            indésirable pour notre site. Ils existent diversses façon de protéger notre site / application pour ma part ici je me sert d'expression
+            régulière pour filtrée les données afin de validée ou non. Je fais ce traitement sur chaque champs de formulaire récupérée.
           </Typography>
-        </Paper>
-
-        <Paper elevation={1} className={classes.paper}>
-          <Typography variant="h4" id="tiers6">Chargeur de class en natif</Typography>
+          <FormEmbed9/>
           <Typography paragraph>
-            Chargeur automatique de class php
+            En principe cette partie la doit ce retrouver dans un model mais là nous restons sur de la programmation orientée procédural.
+            Cette partie consiste à envoyez les données des <span className="query">$_POST</span> vers la base de donnée.
           </Typography>
-          <ChargeurPHP/>
-          <Card className={classes.card}>
-            <Typography paragraph>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolore, distinctio.
-            </Typography>
-          </Card>
-        </Paper>
+          <Typography paragraph>
+            La première ligne dit si les variables d'erreur sont vides de leurs exceptions (message d'erreur utilisateur) alors ont 
+            prépare la requète SQL. 
+          </Typography>
+          <Typography paragraph>
+            Pour communiquée avec la base de donnée il nous faut établir une connexion avec celle ci. Une fois fait on déclare une variable 
+            <span className="var">&nbsp;$statement</span> que l'ont conssidéreras comme une variable d'étape. Cette variable d'étape aura comme valeur
+            la variable <span className="var">$domainSourceName</span> ou <span className="var">$dsn</span> aux choix. <span className="var">$dsn</span> seras 
+            en liaison avec une méthode propre à php qui est <span className="fn">prepare()</span> et le paramètre de cette fonction <span className="fn">prepare()</span>
+            &nbsp;seras notre requète sql déclarée plus haut.
+          </Typography>
 
+          <Typography paragraph>
+            Chacune des étapes déclarée avec la variable <span className="var">$statement</span> sera en liaison avec la méthode <span className="fn">bindValue()</span>
+            &nbsp;encore une fois, méthode propre à php. Cette méthode prend en paramètre 3 en arguments, le champ sql ciblée, la variable avec la donnée à passer
+            et un paramètre propre à cette fonction pour déterminer le type de la données et ce paramètre doit être identique au type de la donnée cotée base de donnée.
+            Exemple si <span className="query">post_name</span> à pour type varchar ou text il devras retournée alors dans ce paramètre l'argument <span className="attr">PDO::PARAM_STR</span>.
+          </Typography>
+          <Typography paragraph>
+            Une fois toutes les étapes faites, alors ont utilise <span className="var">$statement</span> avec la méthode <span className="fn">execute()</span>.
+          </Typography>
+          <Typography paragraph>
+            Selon le résultat établie ont effectue une redirection souhaitez, <span className="fn">unset()</span> permet de détruire la variable en question.
+          </Typography>
+        </Paper>
       </Layout>
     )
   }

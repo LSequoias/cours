@@ -474,7 +474,29 @@ export const FormEmbed8 = () => {
 export const FormEmbed9 = () => {
     const classes = useStyles();
       const codeString = `
+      if(empty($errorName) && empty($errorMail) && empty($errorPassword) && empty($errorCPassword)) {    
+        $query  = 'INSERT INTO bl_users (user_name, user_mail, user_password, created_at_user, user_role) VALUES (:user_name, :user_mail, :user_password, :created_at_user, :user_role)';
+              
+        $dataSourceName = require_once('database/dsn.php');
+        $dataSourceName = connexion();
+  
+        if($statement = $dataSourceName->prepare($query)) {
+            $statement->bindValue(':user_name', $name, PDO::PARAM_STR);
+            $statement->bindValue(':user_mail', $mail, PDO::PARAM_STR);
+            $statement->bindValue(':user_password', $password, PDO::PARAM_STR);
+            $statement->bindValue(':created_at_user', $getDate, PDO::PARAM_STR);
+            $statement->bindValue(':user_role', $getRole, PDO::PARAM_STR);
+  
+            $statement->execute();   
 
+            header("location:index.php");
+        } else {
+            header("location:inscription.php");
+        }
+              
+        unset($statement);
+              
+    }
 `;
     return (
         <SyntaxHighlighter language="phtml" style={monokaiSublime} className={classes.embed}>

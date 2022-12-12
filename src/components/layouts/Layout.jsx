@@ -4,14 +4,14 @@ import { Grid, makeStyles } from '@material-ui/core';
 // components features
 import Sidebar from './sidebar/Sidebar';
 import Main from './main/Main';
+import Footer from './footer/Footer';
+
 
 const useStyles = makeStyles((theme) => ({
   root : {
     paddingTop: `${theme.spacing(1)}rem`,
     justifyContent: 'center',
-    transform: 'translate(0)',
-
-
+    transform: 'translate(0)'
   },
   content: {
     margin: `0 ${theme.spacing(0.15)}rem`,
@@ -33,6 +33,7 @@ const Layout = ({children, data}) => {
   const classes = useStyles();
 
   return (
+    <>
       <Grid container spacing={2} className={classes.root}>
         <Grid item xs={3} sm={4} md={3} lg={3} className={classes.sidebar}>
           <Sidebar data = {data || ""} />
@@ -44,6 +45,8 @@ const Layout = ({children, data}) => {
           </Main>
         </Grid>
       </Grid>
+      <Footer/>
+    </>
   )
 }
 

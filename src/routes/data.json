@@ -8,26 +8,27 @@
         "Les selecteurs CSS",
         "Stylisée du texte",
         "Gérée les background",
-        "Display"
+        "Display",
+        "flexbox",
+        "transitions"
       ],
-      "anchor" : "/part-css#tiers"
+      "anchor" : "/base-css#tiers"
     },
     "middle" : {
       "heading" : "Intermédiaire",
       "chapter" : [
-        "flexbox",
         "grid",
-        "transitions"
-      ],
-      "anchor" : "/part-css#tiers"
-    },
-    "avancer" : {
-      "heading" : "avancer",
-      "chapter" : [
         "poids de selecteurs",
         "cssTrigger"
       ],
-      "anchor" : "/part-css#tiers"
+      "anchor" : "/css-intermediaire#tiers"
+    },
+    "avancer" : {
+      "heading" : "Scss",
+      "chapter" : [
+        "les préprocesseurs"
+      ],
+      "anchor" : "/scss#tiers"
     }
   },
   "php" : {
@@ -39,32 +40,32 @@
         "liaison base de donnée",
         "Usage dynamique de PHP",
         "Utilisée un Template",
-        "Les formulaire avec php",
-        "Chargeur de class en PHP",
-        "MVC"
+        "Les formulaire avec php"
       ],
-      "anchor" : "/part-php#tiers"
+      "anchor" : "/base-php#tiers"
     },
     "middle" : {
       "heading" : "Intermédiaire",
       "chapter" : [
         "Programmation Objet (début)",
+        "Chargeur de class en PHP",
+        "MVC",
         "???",
         "???",
         "???"
       ],
-      "anchor" : "/intermediaire/php-intermediaire#tiers"
+      "anchor" : "/php-intermediaire#tiers"
     },
     "avancer" : {
       "heading" : "avancer",
       "chapter" : [
-        "???",
-        "???",
+        "patern solid",
+        "DAO",
         "???",
         "???",
         "???"
       ],
-      "anchor" : "/part-php#tiers"
+      "anchor" : "/php-avancer#tiers"
     }
   },
   
@@ -82,7 +83,7 @@
         "Foreign key",
         "jointure"
       ],
-      "anchor" : "/part-sql#tiers"
+      "anchor" : "/base-sql#tiers"
     },
     "middle" : {
       "heading" : "Intermédiaire",
@@ -96,7 +97,7 @@
         "???",
         "???"
       ],
-      "anchor" : "/part-sql#tiers"
+      "anchor" : "/sql-intermediaire#tiers"
     },
     "avancer" : {
       "heading" : "avancer",
@@ -107,42 +108,7 @@
         "???",
         "???"
       ],
-      "anchor" : "/part-sql#tiers"
-    }
-  },
-
-
-
-
-  "mongo" : {
-    "begin" : {
-      "heading" : "Débutant",
-      "chapter" : [
-        "introduction",
-        "find",
-        "create"
-      ],
-      "anchor" : "/part-mongo#tiers"
-    },
-    "middle" : {
-      "heading" : "Intermédiaire",
-      "chapter" : [
-        "projection",
-        "pagination",
-        "agregation"
-      ],
-      "anchor" : "/part-mongo#tiers"
-    },
-    "avancer" : {
-      "heading" : "mongo realm",
-      "chapter" : [
-        "Schema",
-        "???",
-        "???",
-        "???",
-        "???"
-      ],
-      "anchor" : "/part-mongo#tiers"
+      "anchor" : "/sql-intermediaire#tiers"
     }
   },
   "js" : {
@@ -156,7 +122,7 @@
         "Manipulation de la date",
         "Objet et Json"
       ],
-      "anchor" : "/part-javascript#tiers"
+      "anchor" : "/base-javascript#tiers"
     },
     "middle" : {
       "heading" : "Intermédiaire",
@@ -168,7 +134,7 @@
         "AJAX",
         "Canvas"
       ],
-      "anchor" : "/part-javascript#tiers"
+      "anchor" : "/js-intermediaire#tiers"
     },
     "avancer" : {
       "heading" : "Avancer",
@@ -178,7 +144,7 @@
         "fonction génératrice",
         "Monade"
       ],
-      "anchor" : "/part-javascript#tiers"
+      "anchor" : "/js-avancer#tiers"
     }
   }
 }

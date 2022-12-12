@@ -5,7 +5,9 @@ export default makeStyles((theme) => ({
   header : {
     backgroundColor: '#111',
     boxShadow: '0 2px 1px 0 #f50057',
-    position: 'static'
+    position: 'static',
+    display : 'flex',
+    flexDirection: 'row',
   },
   menu : {
     backgroundColor: '#111111aa',     // eq : opacity
@@ -27,6 +29,7 @@ export default makeStyles((theme) => ({
   },
   icon : {
     margin: theme.spacing(2),
+    fontSize: '2.5rem',
     color: 'white'
-  },
+  }
 }));
