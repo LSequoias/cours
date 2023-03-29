@@ -54,6 +54,8 @@ const PartJs = data => {
         <Typography paragraph>
           Le fait que JavaScript est un <b>typage faible</b> vous donne la possibilitée de passer pratiquement n'importe quoi dans vos variables, notée aussi que Js est sensible au <b>transTypage</b> c'est à dire la possibilitée de passer d'un type à un autre.
         </Typography>
+        <Typography variant="h5" id="tiers2">Manipulation des chaines des string</Typography>
+
 
       </Paper>
     </Layout>
