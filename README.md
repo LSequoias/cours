@@ -158,7 +158,7 @@ Bien sur il existe d'autre façon de faire et certainnement plus propre. Pour le
 
 En faisant de cette façon vous générée des sections (facile - moyen - difficile - etc) pour chaque langages de chaque page associée. L'objet Json derrière permet la souplesse ainsi vous pouvez éditée chaque chapitre indépendament de chaque section.
 
-Toutefois, pour cela puisse fonctionner il vous reste une dernière étape, injectée les data dans les pages concernée.
+Toutefois, pour que cela puisse fonctionner il vous reste une dernière étape, injectée les data dans les pages concernée.
 
 ### Injection des données dans les pages
 
@@ -172,7 +172,7 @@ Toutefois, pour cela puisse fonctionner il vous reste une dernière étape, inje
         const classes = useStyles();
 
         return (
-            // ainsi la sidebar seras liée au Layout, les ancres et surtout spécifique à la page seront là
+            // ainsi la sidebar seras liée au Layout
             <Layout data={rust}>
                 <Paper elevation={1} className={classes.paper}>
                     <Typography variant="h4" id="tiers0">Introduction</Typography>
