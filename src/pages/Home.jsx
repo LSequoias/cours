@@ -9,7 +9,6 @@ import {
   CardActions,
   CardContent,
   CardMedia,
-  TableContainer,
   Table,
   TableHead,
   TableBody,
@@ -19,9 +18,15 @@ import {
   Typography,
   makeStyles  } from '@material-ui/core';
 
+// services
+import { createData } from '../_services/utils';
+
+
 import {AiOutlineConsoleSql} from "react-icons/ai";
 import {DiPhp} from "react-icons/di";
 import {RxGear} from "react-icons/rx";
+import {FaRust} from "react-icons/fa";
+
 
 
 
@@ -68,9 +73,6 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-function createData(name,type, content) {
-  return {name,type, content};
-}
 
 const rows = [
   createData("Section basique SQL réalisée", <AiOutlineConsoleSql />, "select, insert, update, foreign key, jointure"),
@@ -78,6 +80,8 @@ const rows = [
   createData("Legère refonte", <RxGear/>,"mise en valeur des termes importants"),
   createData("changement d'architecture du site", <RxGear/>, "allégement des sections de cours"),
   createData("Fin de la partie procédural en PHP", <DiPhp/>, "formulaire en procédural"),
+  createData("Section basique Rust", <FaRust/>, "Introduction"),
+  createData("Mise à jour du site", <RxGear/>, "refonte du footer")
 ];
 
 const Home = () => {
@@ -158,7 +162,7 @@ const Home = () => {
                   <TableCell component="th" scope="row">
                     {row.name}
                   </TableCell>
-                  <TableCell align="center" className={classes.type}>{row.type}</TableCell>
+                  <TableCell align="center" className={classes.type}>{row.component}</TableCell>
                   <TableCell align="right">{row.content}</TableCell>
                 </TableRow>
               )).reverse()}
