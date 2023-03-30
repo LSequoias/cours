@@ -146,5 +146,34 @@
       ],
       "anchor" : "/js-avancer#tiers"
     }
+  },
+    "rust" : {
+      "begin" : {
+        "heading" : "Base",
+        "chapter" : [
+          "Introduction",
+          "Les variables sous Rust",
+          "Les types",
+          "Cargo",
+          "Le masquage",
+          "Les Tuple et les tableaux"
+        ],
+        "anchor" : "/base-rust#tiers"
+      },
+      "middle" : {
+        "heading" : "Intermédiaire",
+        "chapter" : [
+          "???"
+        ],
+        "anchor" : "/rust-intermediaire#tiers"
+      },
+      "avancer" : {
+        "heading" : "Avancer",
+        "chapter" : [
+          "???"
+        ],
+        "anchor" : "/rust-avancer#tiers"
+      }
+    }
   }
-}
+

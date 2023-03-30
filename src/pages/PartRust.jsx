@@ -17,15 +17,21 @@ const useStyles = makeStyles((theme) => ({
     },
   
   }));
-const {js} = data
+
+  
+const {rust} = data;
+
 const PartRust = data => {
-    console.log(data)
     const classes = useStyles();
 
     return (
-        <Layout data={js}>
+        <Layout data={rust}>
             <Paper elevation={1} className={classes.paper}>
                 <Typography variant="h4" id="tiers0">Introduction</Typography>
+            </Paper>
+
+            <Paper elevation={1} className={classes.paper}>
+                <Typography variant="h4" id="tiers1">Introduction</Typography>
             </Paper>
         </Layout>
     )
