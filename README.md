@@ -2,7 +2,7 @@
 
 ### Plateforme de cours / Mémo
 
-Cette platform est un recensé de toute les compétances acquise avec le temps, forcément il n'est jamais terminer et je l'avance lorsque j'ai un peu de temps pour moi. Le site tourne sans base de donnée, tout est gérée à l'aide de [React](https://github.com/facebook/react/blob/main/CHANGELOG.md#1701-october-22-2020) et son écosystème.
+Cette platform est un recensé de toute les compétances acquise avec le temps, forcément elle n'est jamais terminer et je l'avance lorsque j'ai un peu de temps pour moi. Le site tourne sans base de donnée, tout est gérée à l'aide de [React](https://github.com/facebook/react/blob/main/CHANGELOG.md#1701-october-22-2020) et son écosystème.
 
 #### Dépendances particulières :
 [Material UI](https://v4.mui.com/fr/getting-started/supported-components/) est sur ce projet mais en version 4.
