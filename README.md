@@ -87,9 +87,9 @@ La sidebar fonctionne avec un objet json, c'est plus malléable. Pour rappel auc
   //... on rajoute un autre document au besoin d'une autre section.
 }
 ```
-*heading* : Sert de séparation pour les niveaux de difficultée.
-*chapter* : Contient un tableau <String[]> définissant les chapitres de chaque difficultée.
-*anchor* : Permet de crée des ancrages liée à chacune des pages.
+*heading* : Sert de séparation pour les niveaux de difficultée.  
+*chapter* : Contient un tableau <String[]> définissant les chapitres de chaque difficultée.  
+*anchor* : Permet de crée des ancrages liée à chacune des pages.  
 
 ### La Sidebar, mécanique par grab
 La sidebar repose sur plusieurs composants enfant, certain sont liée à Material ui et ne seront pas exposée ou expliquée pour le coup, gardé en mémoire que les dépendances doivent être initialisée plus haut pour pouvoir être utilisée dans certain composant.
