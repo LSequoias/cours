@@ -52,7 +52,7 @@ Cette platform est un recensé de toute les compétences acquises avec le temps,
 ```
 
 ### La sidebar, le Schema
-#### L'ojet JSON
+#### L'objet JSON
 
 La sidebar fonctionne avec un objet json, c'est plus malléable. Pour rappel aucune base de donnée est liée toutefois il est possible d'utilisée un Schema de donnée pour cette objet json par le biais de [Mongoose](https://mongoosejs.com) ou encore à l'aide d'une interface [Typescript](https://www.typescriptlang.org).
 ```json
