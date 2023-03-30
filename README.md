@@ -2,7 +2,7 @@
 
 ### Plateforme de cours / Mémo
 
-Cette platform est un recensé de toute les compétances acquise avec le temps, forcément il n'est jamais terminer et je l'avance lorsque j'ai un peu de temps pour moi. Le site tourne sans base de donnée, tout est gérée à l'aide de [React](https://github.com/facebook/react/blob/main/CHANGELOG.md#1701-october-22-2020) et son écosystème.
+Cette platform est un recensé de toute les compétences acquises avec le temps, forcément elle n'est jamais terminer et je l'avance lorsque j'ai un peu de temps pour moi. Le site tourne sans base de donnée, tout est gérée à l'aide de [React](https://github.com/facebook/react/blob/main/CHANGELOG.md#1701-october-22-2020) et son écosystème.
 
 #### Dépendances particulières :
 [Material UI](https://v4.mui.com/fr/getting-started/supported-components/) est sur ce projet mais en version 4.
@@ -52,7 +52,7 @@ Cette platform est un recensé de toute les compétances acquise avec le temps, 
 ```
 
 ### La sidebar, le Schema
-#### L'ojet JSON
+#### L'objet JSON
 
 La sidebar fonctionne avec un objet json, c'est plus malléable. Pour rappel aucune base de donnée est liée toutefois il est possible d'utilisée un Schema de donnée pour cette objet json par le biais de [Mongoose](https://mongoosejs.com) ou encore à l'aide d'une interface [Typescript](https://www.typescriptlang.org).
 ```json
@@ -158,7 +158,7 @@ Bien sur il existe d'autre façon de faire et certainnement plus propre. Pour le
 
 En faisant de cette façon vous générée des sections (facile - moyen - difficile - etc) pour chaque langages de chaque page associée. L'objet Json derrière permet la souplesse ainsi vous pouvez éditée chaque chapitre indépendament de chaque section.
 
-Toutefois, pour cela puisse fonctionner il vous reste une dernière étape, injectée les data dans les pages concernée.
+Toutefois, pour que cela puisse fonctionner il vous reste une dernière étape, injectée les data dans les pages concernée.
 
 ### Injection des données dans les pages
 
@@ -172,7 +172,7 @@ Toutefois, pour cela puisse fonctionner il vous reste une dernière étape, inje
         const classes = useStyles();
 
         return (
-            // ainsi la sidebar seras liée au Layout, les ancres et surtout spécifique à la page seront là
+            // ainsi la sidebar seras liée au Layout
             <Layout data={rust}>
                 <Paper elevation={1} className={classes.paper}>
                     <Typography variant="h4" id="tiers0">Introduction</Typography>
