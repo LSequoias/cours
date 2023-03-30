@@ -7,6 +7,7 @@ import PartCss from './pages/PartCss';
 import PartJs from './pages/PartJs';
 import PartPhp from './pages/PartPhp';
 import PartSql from './pages/PartSql';
+import PartRust from './pages/PartRust';
 
 import Error from './pages/Error';
 
@@ -35,6 +36,7 @@ const App = () => {
         <Route path="/base-javascript" component={PartJs} />
         <Route path="/base-php" component={PartPhp} />
         <Route path="/base-sql" component={PartSql} />
+        <Route path="/base-rust" component={PartRust}/>
         <Route path="/php-intermediaire" component={MediumPHP} />
         <Route path="/css-intermediaire" component={MediumCSS} />
         <Route path="/js-intermediaire" component={MediumJS} />

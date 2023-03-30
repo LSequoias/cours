@@ -56,7 +56,6 @@ const PartJs = data => {
         </Typography>
         <Typography variant="h5" id="tiers2">Manipulation des chaines des string</Typography>
 
-
       </Paper>
     </Layout>
   )

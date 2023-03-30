@@ -8,7 +8,7 @@ import MenuIcon from '@material-ui/icons/Menu';
 import useStyles from './styles';
 
 // React Icons
-import {FaCss3, FaPhp, FaJs} from 'react-icons/fa';
+import {FaCss3, FaPhp, FaJs, FaRust} from 'react-icons/fa';
 import { SiMysql } from "react-icons/si";
 
 const Navbar = () => {
@@ -29,6 +29,9 @@ const Navbar = () => {
 
   // etat pour menu js
   const [ajs, setAjs] = useState(null);
+
+  // etat pour le menu rust
+  const [arust, setArust] = useState(null);
 
   // event menu
   const handleMenu = e => {
@@ -52,13 +55,17 @@ const Navbar = () => {
     setAsql(e.currentTarget);
   };
 
+  const handleRust = e => {
+    setArust(e.currentTarget);
+  }
+
   const handleClose = () => {
     setAncre(null);
     setAPhp(null);
     setAcss(null);
     setAjs(null);
     setAsql(null);
-
+    setArust(null);
   }
 
   // render
@@ -153,6 +160,20 @@ const Navbar = () => {
           </MenuItem>
           <MenuItem onClick={handleClose}>
             <Link to="/sql-intermediaire">SQL intermédiaire</Link>
+          </MenuItem>
+        </Menu>
+      </Toolbar>
+
+      <Toolbar variant="dense">
+        <IconButton className={classes.icon}
+          onClick={handleRust}
+          edge="start"
+          aria-label="menu">
+          <FaRust/>
+        </IconButton>
+        <Menu id="simple-menu" anchorEl={arust} keepMounted open={Boolean(arust)} onClose={handleClose} className={classes.menu}>
+          <MenuItem onClick={handleClose}>
+            <Link to="/base-rust">Base avec Rust</Link>
           </MenuItem>
         </Menu>
       </Toolbar>
