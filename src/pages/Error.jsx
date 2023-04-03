@@ -1,29 +1,8 @@
 import React from 'react';
-// material ui
-import {Grid, Paper, Typography, makeStyles, Card, CardMedia} from '@material-ui/core';
+// Material ui
+import {Grid, Paper, Typography, Card, CardMedia} from '@material-ui/core';
 
-const useStyles = makeStyles((theme) => ({
-  spacing: 1,
-  root: {
-    margin: `${theme.spacing(1)}rem auto`,
-  },
-  paper: {
-    '& > h4': {
-      color: '#f50057',
-      padding:`${theme.spacing(0.1)}rem`,
-    },
-    '& *' : {
-      backgroundColor: '#111',
-    }
-  },
-  picture: {
-    boxShadow: 'inset 3px 3px 5px 5px #333',
-      backgroundColor: '#111',
-  },
-  card : {
-    borderRadius: '0',
-  }
-}));
+import useStyles from "./styles";
 
 
 const Error = () => {

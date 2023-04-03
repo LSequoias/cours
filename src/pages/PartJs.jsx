@@ -1,26 +1,12 @@
 import React from 'react';
 import {BaseJs, TypeJs} from './../components/embed/EmbedJs';
 // Material ui
-import {makeStyles, Paper, Typography} from '@material-ui/core';
+import { Paper, Typography} from '@material-ui/core';
 // components
 import Layout from './../components/layouts/Layout';
 import data from './../routes/data.json';
 
-const useStyles = makeStyles((theme) => ({
-  spacing: 1,
-  paper : {
-    padding: `${theme.spacing(0.5)}rem`,
-    '& > h4, h5' : {
-      //for title
-      paddingBottom : `${theme.spacing(0.2)}rem`,
-    },
-    '& p b' : {
-      color: '#f50057',
-    }
-  },
-
-}));
-
+import useStyles from "./styles";
 
 const {js} = data;
 

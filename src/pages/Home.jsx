@@ -15,8 +15,10 @@ import {
   TableRow,
   TableCell,
   Button,
-  Typography,
-  makeStyles  } from '@material-ui/core';
+  Typography
+} from '@material-ui/core';
+
+import useStyles from "./styles";
 
 // services
 import { createData } from '../_services/utils';
@@ -29,49 +31,6 @@ import {FaRust} from "react-icons/fa";
 
 
 
-
-const useStyles = makeStyles((theme) => ({
-
-  spacing: 5,
-  root: {
-    margin: `${theme.spacing(1)}rem auto`,
-    backgroundColor: 'whitesmoke',
-  },
-  title : {
-    fontFamily : 'Verdana',
-    paddingBottom: '1rem',
-  },
-  paragraph : {
-    textIndent: '1.5rem',
-  },
-  cardContent: {
-    padding: theme.spacing(1),
-  },
-  btnLink : {
-    fontSize: `${theme.spacing(0.15)}rem`,
-    color: '#f50057',
-  },
-  body : {
-    backrgoundColor: 'red',
-  },
-  'type' : {
-    fontSize: '2rem',
-    padding: '0',
-    textAlign : 'center',
-  },
-  table : {
-    padding: '.5rem',
-
-  },
-  tableTitle : {
-    fontWeight: 600,
-    color: '#f0d2f3'
-  },
-  thead : {
-    borderTop: '1px solid rgba(224, 224, 224, 1)',
-    backgroundColor: '#111',
-  }
-}));
 
 
 const rows = [

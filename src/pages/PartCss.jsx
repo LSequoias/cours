@@ -8,40 +8,13 @@ import {
 } from './../components/embed/EmbedCss';
 
 // Material ui
-import {makeStyles, Paper, Typography, Card} from '@material-ui/core';
+import {Paper, Typography, Card} from '@material-ui/core';
+import useStyles from "./styles";
 
 // components
 import Layout from './../components/layouts/Layout';
 import data from './../routes/data.json';
 
-const useStyles = makeStyles((theme) => ({
-  spacing: 1,
-  paper : {
-    marginBottom: '1rem',
-    padding: `${theme.spacing(0.5)}rem`,
-    '& > h4' : {
-      //for title
-      paddingBottom : `${theme.spacing(0.2)}rem`,
-    },
-    '& p b' : {
-        color: '#f50057',
-    },
-    '& p .sec' : {
-        color: "#2e6ade",
-    }
-  },
-  listExemple: {
-    width:'50%',
-    minWidth:'max-content',
-    margin: `2rem 0 2rem ${theme.spacing(0.3)}rem `,
-    border: '1px solid rgba(0, 0, 0, 0.12)',
-    boxShadow: '3px 3px 3px 1px rgba(0, 0, 0, 0.12)',
-    },
-    card: {
-        padding:'1rem',
-        margin: '1rem 0'
-    }
-}));
 
 
 const {css} = data;

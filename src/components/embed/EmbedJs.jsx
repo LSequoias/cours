@@ -1,22 +1,9 @@
 import React from 'react';
-import {makeStyles} from '@material-ui/core';
+import useStyles from "./styles";
 
 import SyntaxHighlighter from 'react-syntax-highlighter';
 import { monokaiSublime } from 'react-syntax-highlighter/dist/esm/styles/hljs';
-//
-const useStyles = makeStyles((theme) => ({
-  embed : {
-    padding : 0,
-    lineHeight: '1.5rem',
-    transition: 'all .33s',
-    boxShadow: '2px 2px 4px #111',
 
-    '&:hover' : {
-      transform: 'scale(1.1)',
-    },
-  },
-
-}));
 
 export const BaseJs = () => {
   const classes = useStyles();
